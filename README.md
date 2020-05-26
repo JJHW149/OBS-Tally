@@ -1,4 +1,7 @@
-OBS Tally for raspberry pi:  
+OBS Tally for raspberry pi: 
+  
+Runs with OBS Websocket:  
+https://github.com/Palakis/obs-websocket/releases
 
 Requires user: pi  
 #Can be changed in the tally.service file  
