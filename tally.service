@@ -1,0 +1,16 @@
+[Unit]
+Description=OBS Tally Light
+After=network.target
+After=multi-user.target
+
+[Service]
+ExecStart=/bin/bash /home/pi/start.sh
+WorkingDirectory=/home/pi
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target
