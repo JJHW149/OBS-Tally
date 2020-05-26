@@ -15,9 +15,13 @@ GPIO 18 -> Data In
 Install:  
 Clone files in to pi home directory  
 
-Setup Adafruit Neopixel Support raspberry pi.  
+Setup Adafruit Neopixel Support raspberry pi:  
   https://learn.adafruit.com/neopixels-on-raspberry-pi/raspberry-pi-wiring  
   sudo pip3 install rpi_ws281x adafruit-circuitpython-neopixel  
+
+Setup obs-websocket-python libary:  
+  https://github.com/Elektordi/obs-websocket-py  
+  sudo pip3 install obs-websocket-py  
 
 In obstally.py change information in edit section to match your setup  
   #EDIT Section  
