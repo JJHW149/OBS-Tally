@@ -1,35 +1,35 @@
-OBS Tally for raspberry pi:
+OBS Tally for raspberry pi:  
 
-Requires user: pi
-#Can be changed in the tally.service file
+Requires user: pi  
+#Can be changed in the tally.service file  
 
-Wiring:
-RPi     -> NeoPixel
-5v      -> 4 - 7VDC
-Gnd     -> Gnd
-GPIO 18 -> Data In
+Wiring:  
+RPi     -> NeoPixel  
+5v      -> 4 - 7VDC  
+Gnd     -> Gnd  
+GPIO 18 -> Data In  
 
-Install:
-Clone files in to pi home directory
+Install:  
+Clone files in to pi home directory  
 
-Setup Adafruit Neopixel Support raspberry pi.
-  https://learn.adafruit.com/neopixels-on-raspberry-pi/raspberry-pi-wiring
-  sudo pip3 install rpi_ws281x adafruit-circuitpython-neopixel
+Setup Adafruit Neopixel Support raspberry pi.  
+  https://learn.adafruit.com/neopixels-on-raspberry-pi/raspberry-pi-wiring  
+  sudo pip3 install rpi_ws281x adafruit-circuitpython-neopixel  
 
-In obstally.py change information in edit section to match your setup
-  #EDIT Section
-  host = "192.168.0.91"
-  port = 4444
-  password = "secret"
-  numLED = 8
-  targetScene = "Camera 1"
-  #End of Edit
+In obstally.py change information in edit section to match your setup  
+  #EDIT Section  
+  host = "192.168.0.91"  
+  port = 4444  
+  password = "secret"  
+  numLED = 8  
+  targetScene = "Camera 1"  
+  #End of Edit  
 
-Move service to system services:
-  sudo cp tally.service /etc/systemd/system/tally.service
+Move service to system services:  
+  sudo cp tally.service /etc/systemd/system/tally.service  
 
-Then enable the service:
-  sudo systemctl enable tally
+Then enable the service:  
+  sudo systemctl enable tally  
   
-To check status:
-  systemctl status tally
+To check status:  
+  systemctl status tally  
